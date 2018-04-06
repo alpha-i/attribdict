@@ -26,5 +26,8 @@ class AttribDict(dict):
     def __delitem__(self, name):
         return super().__delitem__(name)
 
+    def __hash__(self):
+        return hash(repr(dict(self)))
+
     __getattr__ = __getitem__
     __setattr__ = __setitem__
