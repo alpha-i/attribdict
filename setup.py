@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='attribdict',
-    version='0.0.5',
+    version='1.0.0',
     packages=['attribdict'],
     url='',
     license='MIT',
